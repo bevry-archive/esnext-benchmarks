@@ -24,8 +24,14 @@ scandir({
 				Object.keys(features[featureName]).forEach(function(testFile){
 					var path = pathUtil.join(featuresPath, featureName, testFile)
 					var testName = testFile.split('.')[0]
-					var m = require(path)
 					test(testName, function(){
+						var m
+						try {
+							m = require(path)
+						} catch ( err ) {
+							logger.error('The test **'+testName+'** will be ignored because it failed load:', err.message)
+							return
+						}
 						var start = microtime.now()
 						var end = microtime.now() + testDuration
 						var iterations = 0
