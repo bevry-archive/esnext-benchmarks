@@ -91,7 +91,7 @@ scandir({
 						])
 					})
 
-					table.push(['Total', totalIterations, '', '', '', totalDuration])
+					table.push(['Total', totalIterations, '', '', '', '', totalDuration])
 					console.log('')
 					logger.info('Results of the **'+featureName+'** feature (the more iterations the better):')
 					console.log(table.toString())
