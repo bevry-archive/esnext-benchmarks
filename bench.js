@@ -47,7 +47,7 @@ scandir({
 				})
 				test('report', function(){
 					var table = new Table({
-						head: ['test', 'iterations', 'iterations percent', 'time per iteration (ms)', 'faster than next by',  'faster than last by', 'time (ms)']
+						head: ['test', 'iterations', 'iterations percent', 'iterations percent increase', 'time per iteration (ms)', 'faster than next by',  'faster than last by', 'time (ms)']
 					})
 					reports = reports.sort(function(a,b){
 						return a.iterations < b.iterations
@@ -64,7 +64,7 @@ scandir({
 
 						// Compare with previous report
 						if ( index === reports.length - 1 ) {
-							report.fasterNextPercent = 0
+							report.fasterNextPercent = ''
 						} else {
 							report.fasterNextPercent = Math.round(
 								(report.iterations / reports[index+1].iterations)*100 - 100
@@ -73,25 +73,42 @@ scandir({
 
 						// Compare with last report
 						if ( index === reports.length - 1 ) {
-							report.fasterLastPercent = 0
+							report.fasterLastPercent = ''
 						} else {
 							report.fasterLastPercent = Math.round(
 								(report.iterations / reports[reports.length-1].iterations)*100 - 100
 							)
 						}
 
+					})
+					reports.forEach(function(report, index){
+						// Compare with previous report
+						if ( index === reports.length - 1 ) {
+							report.iterationsPercentIncrease = ''
+						} else {
+							report.iterationsPercentIncrease = report.iterationsPercent - reports[index+1].iterationsPercent + '%'
+						}
+						if ( typeof report.iterationsPercent === 'number' ) {
+							report.iterationsPercent += '%'
+						}
+						if ( typeof report.fasterNextPercent === 'number' ) {
+							report.fasterNextPercent += '%'
+						}
+						if ( typeof report.fasterLastPercent === 'number' ) {
+							report.fasterLastPercent += '%'
+						}
+
 						table.push([
 							report.test,
 							report.iterations,
-							report.iterationsPercent+'%',
+							report.iterationsPercent,
+							report.iterationsPercentIncrease,
 							report.timePerIteration,
-							report.fasterNextPercent+'%',
-							report.fasterLastPercent+'%',
+							report.fasterNextPercent,
+							report.fasterLastPercent,
 							report.duration
 						])
 					})
-
-					table.push(['Total', totalIterations, '', '', '', '', totalDuration])
 					console.log('')
 					logger.info('Results of the **'+featureName+'** feature (the more iterations the better):')
 					console.log(table.toString())
