@@ -42,6 +42,10 @@
   "dependencies": {
     "benchmark": "^1.0.0",
     "coffee-script": "^1.9.1",
+    "joe": "^1.6.0",
+    "joe-reporter-console": "^1.2.1",
+    "logdown": "^1.0.8",
+    "microtime": "^1.2.0",
     "projectz": "^0.5.0",
     "scandirectory": "^2.5.0"
   },
