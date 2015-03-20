@@ -8,7 +8,6 @@ var featuresPath = __dirname+'/features'
 var Table = require('cli-table')
 var Logdown = require('logdown')
 var logger = new Logdown()
-var testDuration = 5*1000
 
 scandir({
 	path: featuresPath,
@@ -32,14 +31,14 @@ scandir({
 							logger.error('The test **'+testName+'** will be ignored because it failed load:', err.message)
 							return
 						}
-						var start = microtime.now()
-						var end = microtime.now() + testDuration
+						var start = microtime.nowDouble()
+						var end = microtime.nowDouble() + 1.00
 						var iterations = 0
-						while ( microtime.now() < end ) {
+						while ( microtime.nowDouble() < end ) {
 							m()
 							iterations++
 						}
-						end = microtime.now()
+						end = microtime.nowDouble()
 						var duration = end - start
 						reports.push({
 							feature: featureName,
