@@ -37,6 +37,9 @@ Benchmarks comparing ES6 features to their ES5 and various pre-processor equival
 
 [See what Travis CI says.](https://travis-ci.org/bevry/es6-benchmarks)
 
+## ES6 Features
+
+[Check out this listing to learn more about ES6.](https://github.com/lukehoban/es6features)
 
 ## History
 [Discover the change history via the git changelog.](https://github.com/bevry/es6-benchmarks/commits/master)
