@@ -47,7 +47,7 @@ scandir({
 				})
 				test('report', function(){
 					var table = new Table({
-						head: ['test', 'time (ms)', 'iterations', 'iterations percent', 'time per iteration (ms)', 'faster than next by',  'faster than last by']
+						head: ['test', 'iterations', 'iterations percent', 'time per iteration (ms)', 'faster than next by',  'faster than last by', 'time (ms)']
 					})
 					reports = reports.sort(function(a,b){
 						return a.iterations < b.iterations
@@ -82,16 +82,16 @@ scandir({
 
 						table.push([
 							report.test,
-							report.duration,
 							report.iterations,
 							report.iterationsPercent+'%',
 							report.timePerIteration,
 							report.fasterNextPercent+'%',
-							report.fasterLastPercent+'%'
+							report.fasterLastPercent+'%',
+							report.duration
 						])
 					})
 
-					table.push(['Total', totalDuration, totalIterations, '', '', ''])
+					table.push(['Total', totalIterations, '', '', '', totalDuration])
 					console.log('')
 					logger.info('Results of the **'+featureName+'** feature (the more iterations the better):')
 					console.log(table.toString())
