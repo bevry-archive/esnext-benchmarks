@@ -31,23 +31,12 @@ Benchmarks comparing ES6 features to their ES5 and various pre-processor equival
 1. Install io.js: `nvm install iojs`
 1. Clone this repo: `git clone https://github.com/bevry/es6-benchmarks.git es6-benchmarks`
 1. Change into the cloned directory: `cd es6-benchrmarks`
-1. Run the benchmarks: `npm start`
+1. Run the benchmarks: `npm test`
 
 ## Latest Benchmark Results
 
-``` bash
-# March 20, 2015
+[See what Travis CI says.](https://travis-ci.org/bevry/es6-benchmarks)
 
-> es6-benchmarks@1.0.0 start /Users/balupton/Projects/es6-benchmarks
-> iojs --es_staging --harmony_arrow_functions --harmony bench.js
-
-coffee-fat.coffee x 24,417,839 ops/sec ±0.65% (97 runs sampled)
-coffee-standard.coffee x 38,274,180 ops/sec ±0.97% (99 runs sampled)
-es5-bind.js x 1,001,900 ops/sec ±0.91% (94 runs sampled)
-es5-standard.js x 56,234,190 ops/sec ±0.86% (98 runs sampled)
-es6-fat.js x 56,704,559 ops/sec ±0.71% (94 runs sampled)
-Fastest is es6-fat.js,es5-standard.js
-```
 
 <!-- HISTORY/ -->
 

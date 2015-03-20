@@ -13,7 +13,7 @@
     "c"
   ],
   "badges": {
-    "travis": true,
+    "travis": false,
     "npm": false,
     "npmdownloads": false,
     "david": false,
@@ -46,6 +46,6 @@
     "scandirectory": "^2.5.0"
   },
   "scripts": {
-    "start": "iojs --es_staging --harmony_arrow_functions --harmony bench.js"
+    "test": "iojs --es_staging --harmony_arrow_functions --harmony bench.js"
   }
 }
