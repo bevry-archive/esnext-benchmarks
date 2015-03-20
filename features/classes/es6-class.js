@@ -1,4 +1,6 @@
 "use strict"
 module.exports = function(){
-	(function(){}).bind(this)()
+	class A {}
+	class B extends A {}
+	return
 }

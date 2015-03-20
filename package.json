@@ -46,6 +46,6 @@
     "scandirectory": "^2.5.0"
   },
   "scripts": {
-    "test": "iojs --es_staging --harmony_arrow_functions --harmony bench.js"
+    "test": "iojs --es_staging --harmony_classes --harmony_arrow_functions bench.js"
   }
 }
