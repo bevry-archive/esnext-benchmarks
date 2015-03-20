@@ -52,7 +52,7 @@ scandir({
 				})
 				test('report', function(){
 					var table = new Table({
-						head: ['test', 'iterations', 'iterations percent', 'iterations percent increase', 'time per iteration (ms)', 'faster than next by',  'faster than last by', 'time (ms)']
+						head: ['test', 'iterations', 'iterations percent', 'iterations percent increase', 'time per iteration', 'faster than next by',  'faster than last by', 'time']
 					})
 					reports = reports.sort(function(a,b){
 						return a.iterations < b.iterations
@@ -63,9 +63,8 @@ scandir({
 						report.iterationsPercent = Math.round(
 							(report.iterations / totalIterations)*100
 						)
-						report.timePerIteration = Math.round(
+						report.timePerIteration =
 							report.duration / report.iterations
-						)
 
 						// Compare with previous report
 						if ( index === reports.length - 1 ) {
