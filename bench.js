@@ -35,7 +35,7 @@ scandir({
 						var end = microtime.nowDouble() + 1.00
 						var iterations = 0
 						while ( microtime.nowDouble() < end ) {
-							m()
+							m(1, "two", {}, 4, "five")
 							iterations++
 						}
 						end = microtime.nowDouble()
