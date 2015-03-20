@@ -1,0 +1,111 @@
+
+<!-- TITLE/ -->
+
+# ES6 Benchmarks
+
+<!-- /TITLE -->
+
+
+<!-- BADGES/ -->
+
+[![Build Status](https://img.shields.io/travis/bevry/es6-benchmarks/master.svg)](http://travis-ci.org/bevry/es6-benchmarks "Check this project's build status on TravisCI")<br/>
+[![Gratipay donate button](https://img.shields.io/gratipay/bevry.svg)](https://www.gratipay.com/bevry/ "Donate weekly to this project using Gratipay")
+[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
+
+<!-- /BADGES -->
+
+
+<!-- DESCRIPTION/ -->
+
+Benchmarks comparing ES6 features to their ES5 and various pre-processor equivalents
+
+<!-- /DESCRIPTION -->
+
+
+## Usage
+
+1. Install [NVM](https://github.com/creationix/nvm)
+1. Install io.js: `nvm install iojs`
+1. Clone this repo: `git clone https://github.com/bevry/es6-benchmarks.git es6-benchmarks`
+1. Change into the cloned directory: `cd es6-benchrmarks`
+1. Run the benchmarks: `npm start`
+
+## Latest Benchmark Results
+
+``` bash
+# March 20, 2015
+
+> es6-benchmarks@1.0.0 start /Users/balupton/Projects/es6-benchmarks
+> iojs --es_staging --harmony_arrow_functions --harmony bench.js
+
+coffee-fat.coffee x 24,417,839 ops/sec ±0.65% (97 runs sampled)
+coffee-standard.coffee x 38,274,180 ops/sec ±0.97% (99 runs sampled)
+es5-bind.js x 1,001,900 ops/sec ±0.91% (94 runs sampled)
+es5-standard.js x 56,234,190 ops/sec ±0.86% (98 runs sampled)
+es6-fat.js x 56,704,559 ops/sec ±0.71% (94 runs sampled)
+Fastest is es6-fat.js,es5-standard.js
+```
+
+<!-- HISTORY/ -->
+
+## History
+[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/bevry/es6-benchmarks/blob/master/HISTORY.md#files)
+
+<!-- /HISTORY -->
+
+
+<!-- CONTRIBUTE/ -->
+
+## Contribute
+
+[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/bevry/es6-benchmarks/blob/master/CONTRIBUTING.md#files)
+
+<!-- /CONTRIBUTE -->
+
+
+<!-- BACKERS/ -->
+
+## Backers
+
+### Maintainers
+
+These amazing people are maintaining this project:
+
+- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)
+
+### Sponsors
+
+No sponsors yet! Will you be the first?
+
+[![Gratipay donate button](https://img.shields.io/gratipay/bevry.svg)](https://www.gratipay.com/bevry/ "Donate weekly to this project using Gratipay")
+[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
+
+### Contributors
+
+No contributors yet! Will you be the first?
+[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/bevry/es6-benchmarks/blob/master/CONTRIBUTING.md#files)
+
+<!-- /BACKERS -->
+
+
+<!-- LICENSE/ -->
+
+## License
+
+Unless stated otherwise all works are:
+
+- Copyright &copy; 2015+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)
+
+and licensed under:
+
+- The incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://opensource.org/licenses/mit-license.php)
+
+<!-- /LICENSE -->
+
+

@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "name": "es6-benchmarks",
+  "title": "ES6 Benchmarks",
+  "description": "Benchmarks comparing ES6 features to their ES5 and various pre-processor equivalents",
+  "homepage": "https://github.com/bevry/es6-benchmarks",
+  "license": {
+    "type": "MIT"
+  },
+  "keywords": [
+    "a",
+    "b",
+    "c"
+  ],
+  "badges": {
+    "travis": true,
+    "npm": false,
+    "npmdownloads": false,
+    "david": false,
+    "daviddev": false,
+    "gratipay": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+  },
+  "author": "2015+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/bevry/es6-benchmarks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bevry/es6-benchmarks.git"
+  },
+  "engines": {
+    "iojs": ">=1.6"
+  },
+  "dependencies": {
+    "benchmark": "^1.0.0",
+    "coffee-script": "^1.9.1",
+    "projectz": "^0.5.0",
+    "scandirectory": "^2.5.0"
+  },
+  "scripts": {
+    "start": "iojs --es_staging --harmony_arrow_functions --harmony bench.js"
+  }
+}
