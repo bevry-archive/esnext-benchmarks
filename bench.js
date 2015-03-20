@@ -51,39 +51,50 @@ scandir({
 					reports = reports.sort(function(a,b){
 						return a.iterations < b.iterations
 					})
+					var names = []
 					reports.forEach(function(report, index){
+						names.push('**'+report.test+'**')
+						report.iterationsPercent = Math.round(
+							(report.iterations / totalIterations)*100
+						)
+						report.timePerIteration = Math.round(
+							report.duration / report.iterations
+						)
+
+						// Compare with previous report
 						if ( index === reports.length - 1 ) {
-							report.fasterNext = ''
+							report.fasterNextPercent = 0
 						} else {
-							report.fasterNext = Math.round(
+							report.fasterNextPercent = Math.round(
 								(report.iterations / reports[index+1].iterations)*100 - 100
-							) + '%'
+							)
 						}
+
+						// Compare with last report
 						if ( index === reports.length - 1 ) {
-							report.fasterLast = ''
+							report.fasterLastPercent = 0
 						} else {
-							report.fasterLast = Math.round(
+							report.fasterLastPercent = Math.round(
 								(report.iterations / reports[reports.length-1].iterations)*100 - 100
-							) + '%'
+							)
 						}
+
 						table.push([
 							report.test,
 							report.duration,
 							report.iterations,
-							Math.round(
-								(report.iterations / totalIterations)*100
-							) + '%',
-							Math.round(
-								report.duration / report.iterations
-							),
-							report.fasterNext,
-							report.fasterLast
+							report.iterationsPercent+'%',
+							report.timePerIteration,
+							report.fasterNextPercent+'%',
+							report.fasterLastPercent+'%'
 						])
 					})
+
 					table.push(['Total', totalDuration, totalIterations, '', '', ''])
 					console.log('')
 					logger.info('Results of the **'+featureName+'** feature (the more iterations the better):')
 					console.log(table.toString())
+					logger.info('Fastest to slowest: '+names.join(', '))
 					console.log('')
 				})
 			})
