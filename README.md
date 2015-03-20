@@ -38,21 +38,8 @@ Benchmarks comparing ES6 features to their ES5 and various pre-processor equival
 [See what Travis CI says.](https://travis-ci.org/bevry/es6-benchmarks)
 
 
-<!-- HISTORY/ -->
-
 ## History
-[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/bevry/es6-benchmarks/blob/master/HISTORY.md#files)
-
-<!-- /HISTORY -->
-
-
-<!-- CONTRIBUTE/ -->
-
-## Contribute
-
-[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/bevry/es6-benchmarks/blob/master/CONTRIBUTING.md#files)
-
-<!-- /CONTRIBUTE -->
+[Discover the change history via the git changelog.](https://github.com/bevry/es6-benchmarks/commits/master)
 
 
 <!-- BACKERS/ -->
