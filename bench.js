@@ -8,6 +8,7 @@ var featuresPath = __dirname+'/features'
 var Table = require('cli-table')
 var Logdown = require('logdown')
 var logger = new Logdown()
+var testDuration = 5*1000
 
 scandir({
 	path: featuresPath,
@@ -26,7 +27,7 @@ scandir({
 					var m = require(path)
 					test(testName, function(){
 						var start = microtime.now()
-						var end = microtime.now() + 5*1000
+						var end = microtime.now() + testDuration
 						var iterations = 0
 						while ( microtime.now() < end ) {
 							m()
