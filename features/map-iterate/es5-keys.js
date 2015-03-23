@@ -1,6 +1,6 @@
 "use strict"
+var data = {name:'ben', company:'bevry'}
 module.exports = function(){
-	var data = {name:'ben', company:'bevry'}
 	var result = []
 	Object.keys(data).forEach(function(key){
 		var value = data[key]
