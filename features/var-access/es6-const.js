@@ -1,5 +1,6 @@
 "use strict"
+const blah = 5
 module.exports = function(){
-	var blah = true
+	blah * blah * blah
 	return
 }

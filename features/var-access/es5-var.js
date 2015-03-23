@@ -1,5 +1,6 @@
 "use strict"
+var blah = 5
 module.exports = function(){
-	let blah = true
+	blah * blah * blah
 	return
 }
