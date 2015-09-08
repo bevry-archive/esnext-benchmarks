@@ -1,8 +1,9 @@
 # Custom .travis.yml file
+sudo: false
 language: node_js
-script: "npm test"
 node_js:
   - iojs
 cache:
   directories:
     - node_modules
+script: "npm test"
