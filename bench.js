@@ -1,7 +1,7 @@
 "use strict"
 require('coffee-script/register')
 var joe = require('joe')
-var microtime = require('microtime')
+var microtime = require('microtime-nodejs')
 var pathUtil = require('path')
 var scandir = require('scandirectory')
 var featuresPath = __dirname+'/features'
@@ -123,4 +123,3 @@ scandir({
 		})
 	}
 })
-
