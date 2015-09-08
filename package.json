@@ -2,6 +2,7 @@
   "title": "ES6 Benchmarks",
   "name": "es6-benchmarks",
   "private": true,
+  "version": "1.0.0",
   "description": "Benchmarks comparing ES6 features to their ES5 and various pre-processor equivalents",
   "homepage": "https://github.com/bevry/es6-benchmarks",
   "license": "MIT",

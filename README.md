@@ -34,7 +34,7 @@ Benchmarks comparing ES6 features to their ES5 and various pre-processor equival
 1. Install [NVM](https://github.com/creationix/nvm)
 1. Install [io.js](https://iojs.org): `nvm install iojs`
 1. Via NPM
-	1. Install the package globally: `npm install --global https://github.com/bevry/es6-benchmarks.git`
+	1. Install the package globally: `npm install --global git@github.com:bevry/es6-benchmarks.git`
 	1. Run it via: `es6-benchrmarks`
 1. Via Git
 	1. Clone this repo: `git clone https://github.com/bevry/es6-benchmarks.git es6-benchmarks`
