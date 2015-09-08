@@ -8,11 +8,7 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](https://img.shields.io/travis/bevry/es6-benchmarks/master.svg)](http://travis-ci.org/bevry/es6-benchmarks "Check this project's build status on TravisCI")
-[![NPM version](https://img.shields.io/npm/v/es6-benchmarks.svg)](https://npmjs.org/package/es6-benchmarks "View this project on NPM")
-[![NPM downloads](https://img.shields.io/npm/dm/es6-benchmarks.svg)](https://npmjs.org/package/es6-benchmarks "View this project on NPM")
-[![Dependency Status](https://img.shields.io/david/bevry/es6-benchmarks.svg)](https://david-dm.org/bevry/es6-benchmarks)
-[![Dev Dependency Status](https://img.shields.io/david/dev/bevry/es6-benchmarks.svg)](https://david-dm.org/bevry/es6-benchmarks#info=devDependencies)<br/>
+[![Build Status](https://img.shields.io/travis/bevry/es6-benchmarks/master.svg)](http://travis-ci.org/bevry/es6-benchmarks "Check this project's build status on TravisCI")<br/>
 [![Gratipay donate button](https://img.shields.io/gratipay/bevry.svg)](https://www.gratipay.com/bevry/ "Donate weekly to this project using Gratipay")
 [![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
 [![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
@@ -94,3 +90,5 @@ and licensed under:
 - The incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://opensource.org/licenses/mit-license.php)
 
 <!-- /LICENSE -->
+
+
