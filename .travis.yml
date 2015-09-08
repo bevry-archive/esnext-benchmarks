@@ -1,9 +1,14 @@
-# Custom .travis.yml file
 sudo: false
 language: node_js
 node_js:
-  - iojs
+- iojs
 cache:
   directories:
-    - node_modules
-script: "npm test"
+  - node_modules
+script: npm test
+notifications:
+  slack:
+    secure: ZxJoY5y32erE8HM2/iTtyLCLH21ef1yVNsHDkO4OJej0DpTtiVDrvPWIwxSrbHBrfE38gSGAAqC5aUfOQ+ZV3KEPRXNcigprov9/0LqJTuIN/wkavtf7P6ANkg7LvrZ/y+YQQpEV9/1M9l+4cgh0lYCq+wQes1U+3ocqTZEB5Dc=
+  email:
+    recipients:
+      secure: IUUxjLorhzioB/EMF2jThVJkAvb/RghKt0zFzDavaidI4Uh/SMSC73zEbRxdsvPl6/FaiXD9ONiEEZLmmu5VqnGzx+sGqBBQ77+nvbKoSF7KVHgWhnzWr5agsgaoYF9TLX7HO0CkCX5p2fOnU4Z6HWGRPPmu3lFcTDiNbQ4DloA=
