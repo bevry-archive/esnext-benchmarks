@@ -50,6 +50,6 @@
     "projectz": "^0.5.0"
   },
   "scripts": {
-    "test": "node --harmony --harmony_modules --harmony_arrays --harmony_arrow_functions --harmony_proxies bench.js"
+    "test": "node --harmony --harmony_modules --harmony_proxies bench.js"
   }
 }
