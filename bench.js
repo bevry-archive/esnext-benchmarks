@@ -1,5 +1,4 @@
-"use strict"
-require('coffee-script/register')
+'use strict'
 var joe = require('joe')
 var microtime = require('microtime-nodejs')
 var pathUtil = require('path')
