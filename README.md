@@ -40,7 +40,7 @@ Benchmarks comparing ES6 features to their ES5 and various pre-processor equival
 
 ## ES6 Features
 
-[Check out this listing to learn more about ES6.](https://github.com/lukehoban/es6features)
+[Check out this listing to learn more about ES6.](https://babeljs.io/docs/learn-es2015/)
 
 ## History
 [Discover the change history via the git changelog.](https://github.com/bevry/es6-benchmarks/commits/master)
