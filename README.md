@@ -31,21 +31,19 @@ Benchmarks comparing ESNext features to their ES5 and various pre-processor equi
 
 1. Install [NVM](https://github.com/creationix/nvm)
 1. Install [node.js](https://nodejs.org): `nvm install node`
-1. Clone this repo: `git clone https://github.com/bevry/es6-benchmarks.git es6-benchmarks`
-1. Change into the cloned directory: `cd es6-benchmarks`
+1. Clone this repo: `git clone https://github.com/bevry/esnext-benchmarks.git esnext-benchmarks`
+1. Change into the cloned directory: `cd esnext-benchmarks`
 1. Install dependencies: `npm install`
 1. Run the benchmarks: `npm test`
 
 ## Latest Benchmark Results
-
-[See what Travis CI says.](https://travis-ci.org/bevry/es6-benchmarks)
+[See what Travis CI says.](https://travis-ci.org/bevry/esnext-benchmarks)
 
 ## ESNext Features
-
 [Check out this listing to learn more about ESNext.](https://babeljs.io/docs/learn-es2015/)
 
 ## History
-[Discover the change history via the git changelog.](https://github.com/bevry/es6-benchmarks/commits/master)
+[Discover the change history via the git changelog.](https://github.com/bevry/esnext-benchmarks/commits/master)
 
 
 <!-- BACKERS/ -->
