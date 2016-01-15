@@ -22,8 +22,8 @@
     "config": {
       "patreonUsername": "bevry",
       "gratipayUsername": "bevry",
-      "flattrCode": "344188/balupton-on-Flattr",
-      "paypalButtonID": "QB8GQPZAH84N6",
+      "flattrUsername": "balupton",
+      "paypalURL": "https://bevry.me/paypal",
       "bitcoinURL": "https://bevry.me/bitcoin",
       "wishlistURL": "https://bevry.me/wishlist",
       "slackinURL": "https://slack.bevry.me"
@@ -47,7 +47,6 @@
     "node": ">=5"
   },
   "dependencies": {
-    "benchmark": "^1.0.0",
     "cli-table": "^0.3.1",
     "joe": "^1.6.0",
     "joe-reporter-console": "^1.2.1",
@@ -59,7 +58,7 @@
     "projectz": "^1.0.6"
   },
   "scripts": {
-    "meta": "node ./node_modules/.bin/projectz compile",
+    "prepare": "node ./node_modules/.bin/projectz compile",
     "test": "node --harmony --harmony_modules --harmony_proxies bench.js"
   }
 }

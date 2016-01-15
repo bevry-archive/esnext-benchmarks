@@ -1,6 +1,6 @@
-"use strict"
+'use strict'
 var blah = 5
-module.exports = function(){
+module.exports = function () {
 	blah * blah * blah
 	return
 }

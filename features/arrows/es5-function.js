@@ -1,5 +1,5 @@
-"use strict"
-module.exports = function(){
-	(function(){})()
+'use strict'
+module.exports = function () {
+	(function () {})()
 	return
 }

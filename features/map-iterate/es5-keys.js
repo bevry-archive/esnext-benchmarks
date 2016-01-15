@@ -1,10 +1,10 @@
-"use strict"
+'use strict'
 var data = {name:'ben', company:'bevry'}
-module.exports = function(){
+module.exports = function () {
 	var result = []
-	Object.keys(data).forEach(function(key){
+	Object.keys(data).forEach(function (key) {
 		var value = data[key]
-		result.push(key+': '+value)
+		result.push(key + ': ' + value)
 	})
 	return
 }
