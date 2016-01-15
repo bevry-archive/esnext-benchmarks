@@ -1,13 +1,13 @@
 <!-- TITLE/ -->
 
-<h1>ES6 Benchmarks</h1>
+<h1>ESNext Benchmarks</h1>
 
 <!-- /TITLE -->
 
 
 <!-- BADGES/ -->
 
-<span class="badge-travisci"><a href="http://travis-ci.org/bevry/es6-benchmarks" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/bevry/es6-benchmarks/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-travisci"><a href="http://travis-ci.org/bevry/esnext-benchmarks" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/bevry/esnext-benchmarks/master.svg" alt="Travis CI Build Status" /></a></span>
 <br class="badge-separator" />
 <span class="badge-slackin"><a href="https://slack.bevry.me" title="Join this project's slack community"><img src="https://slack.bevry.me/badge.svg" alt="Slack community badge" /></a></span>
 <span class="badge-patreon"><a href="http://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
@@ -22,7 +22,7 @@
 
 <!-- DESCRIPTION/ -->
 
-Benchmarks comparing ES6 features to their ES5 and various pre-processor equivalents
+Benchmarks comparing ESNext features to their ES5 and various pre-processor equivalents
 
 <!-- /DESCRIPTION -->
 
@@ -56,7 +56,7 @@ Benchmarks comparing ES6 features to their ES5 and various pre-processor equival
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/es6-benchmarks/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/es6-benchmarks">view contributions</a></li></ul>
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/esnext-benchmarks/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/esnext-benchmarks">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -73,7 +73,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/es6-benchmarks/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/es6-benchmarks">view contributions</a></li></ul>
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/esnext-benchmarks/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/esnext-benchmarks">view contributions</a></li></ul>
 
 
 

@@ -1,10 +1,10 @@
 {
-  "title": "ES6 Benchmarks",
-  "name": "es6-benchmarks",
+  "title": "ESNext Benchmarks",
+  "name": "esmext-benchmarks",
   "private": true,
   "version": "1.0.0",
-  "description": "Benchmarks comparing ES6 features to their ES5 and various pre-processor equivalents",
-  "homepage": "https://github.com/bevry/es6-benchmarks",
+  "description": "Benchmarks comparing ESNext features to their ES5 and various pre-processor equivalents",
+  "homepage": "https://github.com/bevry/esnext-benchmarks",
   "license": "MIT",
   "keywords": [],
   "badges": {
@@ -37,11 +37,11 @@
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
   ],
   "bugs": {
-    "url": "https://github.com/bevry/es6-benchmarks/issues"
+    "url": "https://github.com/bevry/esnext-benchmarks/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/bevry/es6-benchmarks.git"
+    "url": "http://github.com/bevry/esnext-benchmarks.git"
   },
   "engines": {
     "node": ">=5"
