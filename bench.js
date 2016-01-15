@@ -5,8 +5,6 @@ var pathUtil = require('path')
 var scandir = require('scandirectory')
 var featuresPath = __dirname+'/features'
 var Table = require('cli-table')
-var Logdown = require('logdown')
-var logger = new Logdown()
 
 scandir({
 	path: featuresPath,
@@ -23,21 +21,30 @@ scandir({
 					var path = pathUtil.join(featuresPath, featureName, testFile)
 					var testName = testFile.split('.')[0]
 					test(testName, function(){
-						var m
+						var m = null
+
 						try {
 							m = require(path)
 						} catch ( err ) {
-							logger.error('The test **'+testName+'** will be ignored because it failed load:', err.message)
+							console.error('The test ['+testName+'] will be ignored because it failed to load:', err.message)
 							return
 						}
-						var start = microtime.nowDouble()
-						var end = microtime.nowDouble() + 1.00
-						var iterations = 0
-						while ( microtime.nowDouble() < end ) {
-							m(1, "two", {}, 4, "five")
-							iterations++
+
+						try {
+							var start = microtime.nowDouble()
+							var end = microtime.nowDouble() + 1.00
+							var iterations = 0
+							while ( microtime.nowDouble() < end ) {
+								m(1, "two", {}, 4, "five")
+								iterations++
+							}
+							end = microtime.nowDouble()
+
+						} catch ( err ) {
+							console.error('The test ['+testName+'] will be ignored because it failed to run:', err.message)
+							return
 						}
-						end = microtime.nowDouble()
+
 						var duration = end - start
 						reports.push({
 							feature: featureName,
@@ -58,7 +65,7 @@ scandir({
 					})
 					var names = []
 					reports.forEach(function(report, index){
-						names.push('**'+report.test+'**')
+						names.push(report.test)
 						report.iterationsPercent = Math.round(
 							(report.iterations / totalIterations)*100
 						)
@@ -113,9 +120,9 @@ scandir({
 						])
 					})
 					console.log('')
-					logger.info('Results of the **'+featureName+'** feature (the more iterations the better):')
+					console.info('Results of the ['+featureName+'] feature (the more iterations the better):')
 					console.log(table.toString())
-					logger.info('Fastest to slowest: '+names.join(', '))
+					console.info('Fastest to slowest: ['+names.join('], [')+']')
 					console.log('')
 				})
 			})
