@@ -48,14 +48,14 @@
   },
   "dependencies": {
     "cli-table": "^0.3.1",
-    "eachr": "^3.1.1",
-    "joe": "^1.6.0",
+    "eachr": "^3.2.0",
+    "joe": "^1.8.0",
     "joe-reporter-console": "^1.2.1",
     "microtime-nodejs": "^1.0.0",
     "scandirectory": "^2.5.0"
   },
   "devDependencies": {
-    "projectz": "^1.0.6"
+    "projectz": "^1.1.6"
   },
   "scripts": {
     "prepare": "node ./node_modules/.bin/projectz compile",
