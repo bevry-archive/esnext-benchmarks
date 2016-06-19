@@ -1,4 +1,4 @@
-# 9 September 2015
+# 2016 April 27
 # https://github.com/bevry/base
 
 # Use the latest travis infrastructure
@@ -7,7 +7,6 @@ sudo: false
 # We use node
 language: node_js
 node_js:
-  - "0.10"
   - "0.12"
   - "4"
   - "5"
