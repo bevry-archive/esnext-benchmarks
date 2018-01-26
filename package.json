@@ -59,6 +59,6 @@
   },
   "scripts": {
     "prepare": "node ./node_modules/.bin/projectz compile",
-    "test": "node --harmony --harmony_modules --harmony_proxies bench.js"
+    "test": "node --harmony bench.js"
   }
 }
