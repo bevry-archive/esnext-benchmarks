@@ -1,6 +1,6 @@
 {
   "title": "ESNext Benchmarks",
-  "name": "esmext-benchmarks",
+  "name": "esnext-benchmarks",
   "private": true,
   "version": "1.0.0",
   "description": "Benchmarks comparing ESNext features to their ES5 and various pre-processor equivalents",
